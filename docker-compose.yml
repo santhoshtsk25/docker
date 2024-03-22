@@ -1,21 +1,21 @@
 version: '3'
 services:
   register:
-    image: register
+    image: santhoshsk/register
     ports:
       - "10:80"
     deploy:
       replicas: 6
 
   stack:
-    image: stack
+    image: santhoshtsk/stack
     ports:
       - "11:80"
     deploy:
       replicas: 6
       
   contact:
-    image: contact
+    image: santhoshtsk/contact
     ports:
       - "12:80"
     deploy:
