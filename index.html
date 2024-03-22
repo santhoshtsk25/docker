@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+body {
+  font-family: Arial;
+}
 
-input[type=text], select, textarea {
+input[type=text], select {
   width: 100%;
-  padding: 12px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
 }
 
 input[type=submit] {
+  width: 100%;
   background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
+  color: white;a
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -30,16 +30,16 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
+div.container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
 </style>
-</head>
 <body>
 
-<h3>Contact Form</h3>
+<h3>Stacked Form</h3>
+<p>How to use CSS to create a stacked form:</p>
 
 <div class="container">
   <form action="/action_page.php">
@@ -55,10 +55,7 @@ input[type=submit]:hover {
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
     </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
+  
     <input type="submit" value="Submit">
   </form>
 </div>
