@@ -7,18 +7,14 @@ services:
     deploy:
       replicas: 6
 
-version: '3'
-services:
-  register:
+  stack:
     image: stack
     ports:
       - "11:80"
     deploy:
       replicas: 6
-
-version: '3'
-services:
-  register:
+      
+  contact:
     image: contact
     ports:
       - "12:80"
