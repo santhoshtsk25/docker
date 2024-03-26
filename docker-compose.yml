@@ -8,7 +8,7 @@ services:
       replicas: 3
 
   contact:
-    image: santhoshtsk/contact:latest
+    image: santhoshtsk/contactrepo:latest
     ports:
       - "11:80"
     deploy:
