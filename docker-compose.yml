@@ -5,7 +5,7 @@ services:
     ports:
       - "10:80"
     deploy:
-      repicas: 3
+      replicas: 3
 
   contact:
     image: santhoshtsk/contact:latest
