@@ -1,8 +1,15 @@
 version: '3'
 services:
-   stack:
-   image: santhoshtsk/stack:latest
-   ports:
-   - 10:80"
-   deploy:
-   replicas: 3
+  register:
+    image: santhoshtsk/register:latest
+    ports:
+      - "10:80"
+    deploy:
+      repicas: 3
+
+  contact:
+    image: santhoshtsk/contact:latest
+    ports:
+      - "11:80"
+    deploy:
+      replicas: 3
